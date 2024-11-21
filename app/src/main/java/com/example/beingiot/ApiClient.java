@@ -18,7 +18,6 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class ApiClient {
     public static Retrofit retrofit;
-//    private static final String SERVER_ADDRESS = "http://greyk.iptime.org:8890/";
     private static String SERVER_ADDRESS;
 
     public static void initialize(Context context) {
