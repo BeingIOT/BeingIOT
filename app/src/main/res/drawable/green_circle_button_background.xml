@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 원형 배경 (첫 번째 레이어) -->
+    <item android:drawable="@drawable/green_circle_button_shape" />
+
+    <!-- SVG 이미지 (두 번째 레이어) -->
+    <item>
+        <vector
+            android:src="@drawable/power_button"
+            android:gravity="center"/>
+    </item>
+</layer-list>
