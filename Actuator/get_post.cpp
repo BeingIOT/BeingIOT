@@ -1,7 +1,8 @@
 #include "get_post.h"
 #include "nw_info.h"
 
-// Response시간에 의해 다음 요청이 버려지는 것을 막기 위해 지연시간을 추가
+// server로 response 받는 동안 response 시간이 지연될 수 있으므로, data 수신을 계속 기다릴 수 있도록 timeout지정 
+// response 시간이 길어짐으로 인해 다음 요청이 처리되지 못하는 것을 방지
 String readResponse(WiFiClient& client) {
   String response = "";
   unsigned long timeout = millis();
